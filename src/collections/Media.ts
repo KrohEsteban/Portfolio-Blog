@@ -10,6 +10,8 @@ const Media: CollectionConfig = {
     }, 
   access: {
     read: () => true,
+    
+
   },
   upload: {
     staticURL: '/media',
@@ -34,8 +36,9 @@ const Media: CollectionConfig = {
     required: true,
     
     },
+   
     
-  ],
+  ], 
 };
 
 export default Media;
