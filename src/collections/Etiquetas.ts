@@ -15,6 +15,7 @@ const Etiquetas: CollectionConfig = {
     create: ({ req: { user } }) => {
       // Return `true` if a user is found
       // and `false` if it is undefined or null
+      console.log(Boolean(user))
       return Boolean(user);
     },
     
