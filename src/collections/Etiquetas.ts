@@ -12,7 +12,7 @@ const Etiquetas: CollectionConfig = {
   },
   access: {
     read: () => true,
-    create: ({ req: { user } }) => {
+    create: async({ req: { user } }) => {
       // Return `true` if a user is found
       // and `false` if it is undefined or null
       console.log(Boolean(user))

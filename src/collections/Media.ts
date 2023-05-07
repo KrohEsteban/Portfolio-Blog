@@ -1,7 +1,5 @@
 import path from 'path';
-import errorHandler from 'payload/dist/express/middleware/errorHandler';
 import type { CollectionConfig } from 'payload/types';
-import ValidateImagen from '../components/ValidateImagen';
 
 const Media: CollectionConfig = {
   slug: 'media',
