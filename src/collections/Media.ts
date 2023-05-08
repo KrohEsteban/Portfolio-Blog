@@ -1,5 +1,9 @@
 import path from 'path';
 import type { CollectionConfig } from 'payload/types';
+import ValidateImagen from '../components/ValidateImagen';
+import APIError from 'payload/dist/errors/APIError';
+import errorHandler from 'payload/dist/express/middleware/errorHandler';
+
 
 const Media: CollectionConfig = {
   slug: 'media',
@@ -37,6 +41,27 @@ const Media: CollectionConfig = {
    
     
   ], 
-};
+
+  hooks: {
+
+    beforeValidate: [({
+      data , // datos entrantes para actualizar o crear con 
+    }) => {
+      
+      console.log(data.mimeType)
+      if(data.mimeType!='image/webp'){
+        const err= new APIError('Recuerde que debe subir una imagen con extencion WEBP, transforme su imagen jpg o png a formato webp')
+        throw err
+      }else{
+        return data;
+      }
+
+      
+    }],
+
+  
+
+  }
+}
 
 export default Media;

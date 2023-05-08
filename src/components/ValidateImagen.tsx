@@ -9,10 +9,13 @@ function ValidateImagen():React.FC {
   //   alert("Recuerde que el formato de la imagen debe ser WEBP, transforme la imagen de jpg o png a webp")
   // }
   
+
+
   return(
  
       
-    <h1>ERRor</h1>
+    <h1 className={{position: 'absolute', width:'30px', height: '60px', backgrund:'#af3456'}}>ERRor</h1>
+    
 
     
   )
