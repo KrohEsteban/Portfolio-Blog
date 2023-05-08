@@ -12,11 +12,11 @@ const Etiquetas: CollectionConfig = {
   },
   access: {
     read: () => true,
-    create: async({ req: { user } }) => {
+    create: ( req ) => {
       // Return `true` if a user is found
       // and `false` if it is undefined or null
-      console.log(Boolean(user))
-      return Boolean(user);
+      console.log(Boolean(req.req.user))
+      return Boolean(req.req.user);
     },
     
   },
