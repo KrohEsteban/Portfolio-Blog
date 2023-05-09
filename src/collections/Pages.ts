@@ -33,6 +33,31 @@ const Pages: CollectionConfig = {
       required: true,
     },
     {
+      name: 'PalabrasClaves', // required
+      type: 'array', // required
+      label: 'Palabras Claves',
+      minRows: 2,
+      maxRows: 10,
+      labels: {
+        singular: 'Palabra Clave',
+        plural: 'Palabras Claves',
+      },
+      fields: [ // required
+        {
+          name: 'titulo',
+          type: 'text',
+        },
+      ],
+      admin: {
+        components: {
+          RowLabel: ({ data, index }) => {
+            return data?.title || `Palabra Clave ${String(index).padStart(2, '0')}`;
+          },
+        },
+      },
+    },
+
+    {
       name: 'Bloques', // required
       type: 'blocks', // required
       minRows: 1,
