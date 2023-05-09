@@ -4,17 +4,12 @@ import Blogs from './collections/Blogs';
 import Etiquetas from './collections/Etiquetas';
 import Users from './collections/Users';
 import Media from './collections/Media';
-import Hobby from './collections/Hobby';
-import HobbyCarrusel from './collections/HobbyCarrusel';
-import Inicio from './collections/Inicio';
 import MyLogo from './components/MyLogo';
 import MyIcon from './components/MyIcon';
-import ProyectosTextos from './collections/ProyectosTextos';
 import Proyectos from './collections/Proyectos';
-import Aptitudes from './collections/Aptitudes';
 import Tecnologias from './collections/Tecnologias';
-import BlogsTextos from './collections/BlogsTextos';
 import Contactos from './collections/Contactos';
+import Pages from './collections/Pages';
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
@@ -33,17 +28,12 @@ export default buildConfig({
     },
   },
   collections: [
-    Inicio,
+    Pages,
+    Blogs,
     Contactos,
     Etiquetas,
-    BlogsTextos,
-    Blogs,
-    Aptitudes,
     Tecnologias,
-    ProyectosTextos,
     Proyectos,
-    Hobby,
-    HobbyCarrusel,
     Media,
     Users,
   ],
