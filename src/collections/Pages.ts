@@ -11,7 +11,7 @@ const Pages: CollectionConfig = {
   },
   admin: {
     defaultColumns: ['Title', 'Slug'],
-    useAsTitle: 'name',
+    useAsTitle: 'Title',
   },
   access: {
     read: () => true,

@@ -8,7 +8,7 @@ const Contactos: CollectionConfig = {
   },
   admin: {
     defaultColumns: ['Nombre'],
-    useAsTitle: 'name',
+    useAsTitle: 'Nombre',
   },
   access: {
     read: () => true,

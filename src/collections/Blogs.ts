@@ -8,7 +8,7 @@ const Blogs: CollectionConfig = {
   },
   admin: {
     defaultColumns: ['TituloDelArticulo', 'etiquetas', 'status'],
-    useAsTitle: 'title',
+    useAsTitle: 'TituloDelArticulo',
   },
   access: {
     read: () => true,

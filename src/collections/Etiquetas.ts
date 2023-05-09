@@ -7,8 +7,8 @@ const Etiquetas: CollectionConfig = {
     plural:"Etiquetas",
   },
   admin: {
-    defaultColumns: ['name'],
-    useAsTitle: 'name',
+    defaultColumns: ['Titulo'],
+    useAsTitle: 'Titulo',
   },
   access: {
     read: () => true,
@@ -16,7 +16,7 @@ const Etiquetas: CollectionConfig = {
   },
   fields: [
     {
-      name: 'name',
+      name: 'Titulo',
       type: 'text',
     },
   ],

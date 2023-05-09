@@ -1,14 +1,14 @@
 import { CollectionConfig } from 'payload/types';
 
 const Proyectos: CollectionConfig = {
-  slug: 'proyetos',
+  slug: 'proyectos',
   labels:{
     singular:"Proyecto",
     plural:"Proyectos",
   },
   admin: {
     defaultColumns: ['TituloProyect'],
-    useAsTitle: 'name',
+    useAsTitle: 'TituloProyect',
   },
   access: {
     read: () => true,
