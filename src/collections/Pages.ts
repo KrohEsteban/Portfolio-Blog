@@ -10,7 +10,7 @@ const Pages: CollectionConfig = {
     plural:"Pages",
   },
   admin: {
-    defaultColumns: ['TituloSeccion'],
+    defaultColumns: ['Title', 'Slug'],
     useAsTitle: 'name',
   },
   access: {
