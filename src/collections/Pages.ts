@@ -2,6 +2,7 @@ import { CollectionConfig } from 'payload/types';
 import Titulo from '../components/Bloques/Titulo';
 import Texto from '../components/Bloques/Texto';
 import Imagen from '../components/Bloques/Imagen';
+import Codigo from '../components/Bloques/Codigo';
 
 const Pages: CollectionConfig = {
   slug: 'pages',
@@ -65,7 +66,8 @@ const Pages: CollectionConfig = {
       blocks: [ // required
        Titulo,
        Texto,
-       Imagen
+       Imagen,
+       Codigo
       ]
     }
     
