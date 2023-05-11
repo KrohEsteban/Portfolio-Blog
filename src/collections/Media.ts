@@ -11,7 +11,6 @@ const Media: CollectionConfig = {
     }, 
   access: {
     read: () => true,
-    
 
   },
   upload: {
