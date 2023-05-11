@@ -16,10 +16,10 @@ const Media: CollectionConfig = {
   },
   upload: {
     staticURL: '/media',
-    staticDir: path.resolve(__dirname, '../../media'),
+    staticDir: path.resolve(__dirname, '/media'),
     // Specify the size name that you'd like to use as admin thumbnail
     adminThumbnail: 'thumbnail',
-    mimeTypes: ['image/webp'],
+    //mimeTypes: ['image/webp'],
     imageSizes: [
       {
         height: 400,
@@ -41,25 +41,25 @@ const Media: CollectionConfig = {
     
   ], 
 
-  hooks: {
+  // hooks: {
 
-    beforeValidate: [({
-      data , // datos entrantes para actualizar o crear con 
-    }) => {
+  //   beforeValidate: [({
+  //     data , // datos entrantes para actualizar o crear con 
+  //   }) => {
      
-      if(data.mimeType!='image/webp'){
-        const err= new APIError('Recuerde que debe subir una imagen con extencion WEBP, transforme su imagen jpg o png a formato webp')
-        throw err
-      }else{
-        return data;
-      }
+  //     if(data.mimeType!='image/webp'){
+  //       const err= new APIError('Recuerde que debe subir una imagen con extencion WEBP, transforme su imagen jpg o png a formato webp')
+  //       throw err
+  //     }else{
+  //       return data;
+  //     }
 
       
-    }],
+  //   }],
 
   
 
-  }
+  // }
 }
 
 export default Media;

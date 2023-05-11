@@ -1,4 +1,5 @@
 import { buildConfig } from 'payload/config';
+import webp from "payload-webp";
 import path from 'path';
 import Blogs from './collections/Blogs';
 import Etiquetas from './collections/Etiquetas';
@@ -37,6 +38,10 @@ export default buildConfig({
     Media,
     Users,
   ],
+  plugins: [
+    webp()
+  ],
+
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts')
   },
