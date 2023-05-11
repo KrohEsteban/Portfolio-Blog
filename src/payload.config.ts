@@ -18,7 +18,7 @@ export default buildConfig({
     user: Users.slug,
     meta: {
       titleSuffix: '- Esteban Kroh',
-      favicon: '/assets/favicon.png',
+      favicon: '/assets/favicon.svg',
       ogImage: '/assets/estebankroh.svg',
     },
     components: {
