@@ -14,6 +14,47 @@ const Blogs: CollectionConfig = {
     read: () => true,
   },
   fields: [
+    
+    {
+      name: 'Title',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'Description',
+      type: 'textarea',
+      required: true,
+    },
+    {
+      name: 'Slug', // required
+      type: 'text', // required
+      required: true,
+    },
+    {
+      name: 'PalabrasClaves', // required
+      type: 'array', // required
+      label: 'Palabras Claves',
+      minRows: 2,
+      maxRows: 10,
+      labels: {
+        singular: 'Palabra Clave',
+        plural: 'Palabras Claves',
+      },
+      fields: [ // required
+        {
+          name: 'titulo',
+          type: 'text',
+        },
+      ],
+      admin: {
+        components: {
+          RowLabel: ({ data, index }) => {
+            return data?.title || `Palabra Clave ${String(index).padStart(2, '0')}`;
+          },
+        },
+      },
+    },
+
     {
       name: 'TituloDelArticulo',
       type: 'text',
@@ -23,11 +64,6 @@ const Blogs: CollectionConfig = {
       type: 'relationship',
       relationTo: 'etiquetas',
       hasMany: true,
-    },
-    {
-      name: 'TextoDescription',
-      type: 'textarea',
-      required: true,
     },
     {
       name: 'Texto',
