@@ -1,14 +1,14 @@
 import { Block } from "payload/types";
 
- const Texto: Block = {
-    slug: 'Texto', // required
+ const RichText: Block = {
+    slug: 'RichText', // required
     fields: [ // required
       {
-        name: 'Texto',
+        name: 'RichText',
         type: 'richText',
         required: true,
       },
     ]
   };
   
-  export default Texto
+  export default RichText
