@@ -58,20 +58,26 @@ const Pages: CollectionConfig = {
         },
       },
     },
-
     {
-      name: 'Bloques', // required
-      type: 'blocks', // required
-      minRows: 1,
-      maxRows: 20,
-      blocks: [ // required
-       Titulo,
-       Texto,
-       Imagen,
-       Codigo,
-       RichText
-      ]
-    }
+      name: 'Contenido',
+      type: 'richText',
+      admin: {
+        elements: [
+          'h1',
+          'h2',
+          'h3',
+          'h4',
+          'h5',
+          'h6',
+          'blockquote',
+          'link',
+          'ol',
+          'ul',
+          'indent',
+          'upload',
+        ],
+    },
+   },
     
   ],
 }

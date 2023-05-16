@@ -9,6 +9,7 @@ const Tecnologias: CollectionConfig = {
   admin: {
     defaultColumns: ['TituloDeSatck'],
     useAsTitle: 'TituloDeSatck',
+    
   },
   access: {
     read: () => true,

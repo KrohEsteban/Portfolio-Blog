@@ -1,4 +1,8 @@
-import { CollectionConfig } from 'payload/types';
+import { CollectionConfig, TextField } from 'payload/types';
+
+// type NewField = TextField;
+
+// const basio:NewField
 
 const Blogs: CollectionConfig = {
   slug: 'blog',
@@ -66,9 +70,25 @@ const Blogs: CollectionConfig = {
       hasMany: true,
     },
     {
-      name: 'Texto',
-      type: 'richText'
+      name: 'Contenido',
+      type: 'richText',
+      admin: {
+        elements: [
+          'h1',
+          'h2',
+          'h3',
+          'h4',
+          'h5',
+          'h6',
+          'blockquote',
+          'link',
+          'ol',
+          'ul',
+          'indent',
+          'upload',
+        ],
     },
+   },
     {
       name: 'estado',
       type: 'select',

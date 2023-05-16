@@ -27,6 +27,8 @@ export default buildConfig({
         Icon: MyIcon,
       },
     },
+
+
   },
   collections: [
     Pages,
