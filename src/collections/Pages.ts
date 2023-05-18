@@ -1,9 +1,6 @@
 import { CollectionConfig } from 'payload/types';
-import Titulo from '../components/Bloques/Titulo';
-import Texto from '../components/Bloques/Texto';
-import Imagen from '../components/Bloques/Imagen';
-import Codigo from '../components/Bloques/Codigo';
-import RichText from '../components/Bloques/RichText';
+import RichTextButton from '../components/CustomRichText/RichTextButton';
+import RichTextElement from '../components/CustomRichText/RichTextElement';
 
 const Pages: CollectionConfig = {
   slug: 'pages',
@@ -69,6 +66,14 @@ const Pages: CollectionConfig = {
           'h4',
           'h5',
           'h6',
+          {
+            name: 'codigo-tsx',
+            Button: RichTextButton,
+            Element: RichTextElement,
+            plugins: [
+              // any plugins that are required by this element go here
+            ]
+          },
           'blockquote',
           'link',
           'ol',
@@ -77,6 +82,7 @@ const Pages: CollectionConfig = {
           'upload',
         ],
     },
+
    },
     
   ],

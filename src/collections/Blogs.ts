@@ -1,4 +1,7 @@
 import { CollectionConfig, TextField } from 'payload/types';
+import { lexicalRichTextField } from 'payload-plugin-lexical';
+import RichTextButton from '../components/CustomRichText/RichTextButton';
+import RichTextElement from '../components/CustomRichText/RichTextElement';
 
 // type NewField = TextField;
 
@@ -80,6 +83,14 @@ const Blogs: CollectionConfig = {
           'h4',
           'h5',
           'h6',
+          {
+            name: 'codigo-tsx',
+            Button: RichTextButton,
+            Element: RichTextElement,
+            plugins: [
+              // any plugins that are required by this element go here
+            ]
+          },
           'blockquote',
           'link',
           'ol',
@@ -88,7 +99,9 @@ const Blogs: CollectionConfig = {
           'upload',
         ],
     },
+
    },
+
     {
       name: 'estado',
       type: 'select',

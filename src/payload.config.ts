@@ -41,7 +41,7 @@ export default buildConfig({
     Users,
   ],
   plugins: [
-    webp()
+    webp(),
   ],
 
   typescript: {
