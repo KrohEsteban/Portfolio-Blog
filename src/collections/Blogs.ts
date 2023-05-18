@@ -2,6 +2,10 @@ import { CollectionConfig } from 'payload/types';
 import RichTextButton from '../components/CustomRichText/RichTextButton';
 import RichTextElement from '../components/CustomRichText/RichTextElement';
 
+// type NewField = TextField;
+
+// const basio:NewField
+
 const Blogs: CollectionConfig = {
   slug: 'blog',
   labels:{
@@ -78,6 +82,14 @@ const Blogs: CollectionConfig = {
           'h4',
           'h5',
           'h6',
+          {
+            name: 'codigotsx',
+            Button: RichTextButton,
+            Element: RichTextElement,
+            plugins: [
+              // any plugins that are required by this element go here
+            ]
+          },
           'blockquote',
           'link',
           'ol',
@@ -85,19 +97,7 @@ const Blogs: CollectionConfig = {
           'indent',
           'upload',
         ],
-         leaves: [
-          'bold',
-          'italic',
-          'underline',
-          'strikethrough',
-          'code',
-          {
-            name: 'codigotsx',
-            Button: RichTextButton,
-            Leaf: RichTextElement,
-            plugins: []
-          },
-        ],
+        
     },
 
    },
