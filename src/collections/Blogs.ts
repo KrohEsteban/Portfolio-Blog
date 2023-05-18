@@ -95,7 +95,7 @@ const Blogs: CollectionConfig = {
             name: 'codigotsx',
             Button: RichTextButton,
             Leaf: RichTextElement,
-            
+            plugins: []
           },
         ],
     },
