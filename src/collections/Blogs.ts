@@ -1,5 +1,4 @@
-import { CollectionConfig, TextField } from 'payload/types';
-import { lexicalRichTextField } from 'payload-plugin-lexical';
+import { CollectionConfig } from 'payload/types';
 import RichTextButton from '../components/CustomRichText/RichTextButton';
 import RichTextElement from '../components/CustomRichText/RichTextElement';
 
