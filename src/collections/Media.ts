@@ -1,7 +1,5 @@
 import path from 'path';
 import type { CollectionConfig } from 'payload/types';
-import APIError from 'payload/dist/errors/APIError';
-
 
 
 const Media: CollectionConfig = {

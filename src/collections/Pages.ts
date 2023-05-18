@@ -66,20 +66,25 @@ const Pages: CollectionConfig = {
           'h4',
           'h5',
           'h6',
-          {
-            name: 'codigo-tsx',
-            Button: RichTextButton,
-            Element: RichTextElement,
-            plugins: [
-              // any plugins that are required by this element go here
-            ]
-          },
           'blockquote',
           'link',
           'ol',
           'ul',
           'indent',
           'upload',
+        ],
+         leaves: [
+          'bold',
+          'italic',
+          'underline',
+          'strikethrough',
+          'code',
+          {
+            name: 'codigotsx',
+            Button: RichTextButton,
+            Leaf: RichTextElement,
+           
+          },
         ],
     },
 

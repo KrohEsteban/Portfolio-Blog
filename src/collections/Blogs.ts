@@ -2,10 +2,6 @@ import { CollectionConfig } from 'payload/types';
 import RichTextButton from '../components/CustomRichText/RichTextButton';
 import RichTextElement from '../components/CustomRichText/RichTextElement';
 
-// type NewField = TextField;
-
-// const basio:NewField
-
 const Blogs: CollectionConfig = {
   slug: 'blog',
   labels:{
@@ -96,12 +92,10 @@ const Blogs: CollectionConfig = {
           'strikethrough',
           'code',
           {
-            name: 'codigo-tsx',
+            name: 'codigotsx',
             Button: RichTextButton,
             Leaf: RichTextElement,
-            plugins: [
-              // any plugins that are required by this element go here
-            ]
+            
           },
         ],
     },
