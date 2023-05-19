@@ -1,12 +1,12 @@
 import React from 'react';
 
 const RichTextElementModal: React.FC<any> = ({ attributes, children }) => (
-  <span
+  <div
     {...attributes}
     style={{ backgroundColor: 'grey'}}
   >
    {children}
-  </span>
+  </div>
 );
 
 export default RichTextElementModal;
