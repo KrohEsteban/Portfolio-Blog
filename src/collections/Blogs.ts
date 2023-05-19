@@ -1,6 +1,8 @@
 import { CollectionConfig } from 'payload/types';
-import RichTextButton from '../components/CustomRichText/RichTextButton';
-import RichTextElement from '../components/CustomRichText/RichTextElement';
+import RichTextButtonCode from '../components/CustomRichText/RichTextButtonCode';
+import RichTextElementCode from '../components/CustomRichText/RichTextElementCode';
+import RichTextButtonModal from '../components/CustomRichText/RichTextButtonModal';
+import RichTextElementModal from '../components/CustomRichText/RichTextElementModal';
 
 // type NewField = TextField;
 
@@ -84,8 +86,16 @@ const Blogs: CollectionConfig = {
           'h6',
           {
             name: 'codigotsx',
-            Button: RichTextButton,
-            Element: RichTextElement,
+            Button: RichTextButtonCode,
+            Element: RichTextElementCode,
+            plugins: [
+              // any plugins that are required by this element go here
+            ]
+          },
+          {
+            name: 'modal',
+            Button: RichTextButtonModal,
+            Element: RichTextElementModal,
             plugins: [
               // any plugins that are required by this element go here
             ]

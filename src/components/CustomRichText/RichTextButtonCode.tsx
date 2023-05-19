@@ -2,7 +2,7 @@ import React from 'react';
 import { ElementButton } from 'payload/components/rich-text'
 
 
-const RichTextButton: React.FC = () => {
+const RichTextButtonCode: React.FC = () => {
 
 
     return (
@@ -17,4 +17,4 @@ const RichTextButton: React.FC = () => {
     );
 };
 
-export default RichTextButton;
+export default RichTextButtonCode;
