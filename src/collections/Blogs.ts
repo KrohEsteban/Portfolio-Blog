@@ -3,6 +3,10 @@ import RichTextButtonCode from '../components/CustomRichText/RichTextButtonCode'
 import RichTextElementCode from '../components/CustomRichText/RichTextElementCode';
 import RichTextButtonModal from '../components/CustomRichText/RichTextButtonModal';
 import RichTextElementModal from '../components/CustomRichText/RichTextElementModal';
+import RichTextNormal from '../components/Bloques/RichTextNormal';
+import Modal from '../components/Bloques/Modal';
+import Carousel from '../components/Bloques/Carousel';
+import Codigo from '../components/Bloques/Codigo';
 
 // type NewField = TextField;
 
@@ -62,55 +66,18 @@ const Blogs: CollectionConfig = {
         },
       },
     },
-
     {
-      name: 'TituloDelArticulo',
-      type: 'text',
+      name: 'Contenido', // required
+      type: 'blocks', // required
+      minRows: 1,
+      maxRows: 20,
+      blocks: [ // required
+       RichTextNormal,
+       Modal,
+       Carousel,
+       Codigo,
+      ]
     },
-    {
-      name: 'etiquetas',
-      type: 'relationship',
-      relationTo: 'etiquetas',
-      hasMany: true,
-    },
-    {
-      name: 'Contenido',
-      type: 'richText',
-      admin: {
-        elements: [
-          'h1',
-          'h2',
-          'h3',
-          'h4',
-          'h5',
-          'h6',
-          {
-            name: 'codigotsx',
-            Button: RichTextButtonCode,
-            Element: RichTextElementCode,
-            plugins: [
-              // any plugins that are required by this element go here
-            ]
-          },
-          {
-            name: 'modal',
-            Button: RichTextButtonModal,
-            Element: RichTextElementModal,
-            plugins: [
-              // any plugins that are required by this element go here
-            ]
-          },
-          'blockquote',
-          'link',
-          'ol',
-          'ul',
-          'indent',
-          'upload',
-        ],
-        
-    },
-
-   },
 
     {
       name: 'estado',
