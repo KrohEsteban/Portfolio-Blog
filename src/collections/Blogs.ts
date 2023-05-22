@@ -66,6 +66,17 @@ const Blogs: CollectionConfig = {
         },
       },
     },
+
+    {
+      name: 'TituloDelArticulo',
+      type: 'text',
+    },
+    {
+      name: 'etiquetas',
+      type: 'relationship',
+      relationTo: 'etiquetas',
+      hasMany: true,
+    },
     {
       name: 'Contenido', // required
       type: 'blocks', // required
