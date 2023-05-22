@@ -4,7 +4,7 @@ import { Block } from "payload/types";
     slug: 'Modal', // required
     fields: [ // required
     {
-      name: 'Contenido',
+      name: 'Modal',
       type: 'richText',
       admin: {
         elements: [

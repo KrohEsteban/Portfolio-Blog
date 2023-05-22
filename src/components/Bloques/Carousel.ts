@@ -4,10 +4,10 @@ import { Block } from "payload/types";
     slug: 'Carousel', // required
     fields: [ // required
     {
-      name: 'Campos', // required
+      name: 'Carousel', // required
       type: 'array', // required
-      label: 'Campos',
-      minRows: 2,
+      label: 'Carousel',
+      minRows: 1,
       maxRows: 10,
       labels: {
         singular: 'Campo',
