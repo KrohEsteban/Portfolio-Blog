@@ -23,7 +23,7 @@ import { Block } from "payload/types";
           type: 'text',
         },
         {
-          name: 'backgroundImage', // required
+          name: 'Image', // required
           type: 'upload', // required
           relationTo: 'media', // required
           required: true,

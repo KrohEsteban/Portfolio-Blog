@@ -46,18 +46,10 @@ const Proyectos: CollectionConfig = {
       required: true,
     },
     {
-      name: 'TextoLargoExplicandoTodoElProyecto', // required
-      type: 'richText', // required
-      required: true,
-    },
-    {
-      name: 'Slug',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'UrlProyect',
-      type: 'text',
+      name: 'Post',
+      type: 'relationship',
+      relationTo: 'blog',
+      hasMany: false,
     },
     {
       name: 'Stack',
