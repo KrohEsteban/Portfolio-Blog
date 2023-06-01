@@ -62,6 +62,13 @@ const Pages: CollectionConfig = {
         },
       },
     },
+
+    {
+      name: 'ImageOpenGraph', // required
+      type: 'upload', // required
+      relationTo: 'media', // required
+      required: true,
+    },
     
     {
       name: 'Contenido', // required

@@ -66,11 +66,13 @@ const Blogs: CollectionConfig = {
         },
       },
     },
-
     {
-      name: 'TituloDelArticulo',
-      type: 'text',
+      name: 'ImageOpenGraph', // required
+      type: 'upload', // required
+      relationTo: 'media', // required
+      required: true,
     },
+    
     {
       name: 'etiquetas',
       type: 'relationship',
