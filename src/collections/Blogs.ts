@@ -19,7 +19,7 @@ const Blogs: CollectionConfig = {
     plural:"Blogs",
   },
   admin: {
-    defaultColumns: ['TituloDelArticulo', 'etiquetas', 'status'],
+    defaultColumns: ['Title', 'etiquetas', 'status'],
     useAsTitle: 'TituloDelArticulo',
   },
   access: {
@@ -90,25 +90,6 @@ const Blogs: CollectionConfig = {
        Carousel,
        Codigo,
       ]
-    },
-
-    {
-      name: 'estado',
-      type: 'select',
-      options: [
-        {
-          value: 'guardar',
-          label: 'Guardar',
-        },
-        {
-          value: 'publicar',
-          label: 'Publicar',
-        },
-      ],
-      defaultValue: 'guardar',
-      admin: {
-        position: 'sidebar',
-      }
     }
   ],
 }
