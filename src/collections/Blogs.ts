@@ -19,7 +19,7 @@ const Blogs: CollectionConfig = {
     plural:"Blogs",
   },
   admin: {
-    defaultColumns: ['Title', 'etiquetas', 'status'],
+    defaultColumns: ['Title', 'etiquetas'],
     useAsTitle: 'TituloDelArticulo',
   },
   access: {
