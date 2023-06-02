@@ -3,8 +3,7 @@ import './logo.css';
 
 function MyLogo():React.FC {
   return(
- 
-      
+
     <div className="handwriting ">
     <svg
       xmlns="http://www.w3.org/2000/svg"
