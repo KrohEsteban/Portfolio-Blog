@@ -4,7 +4,7 @@ import { Block } from "payload/types";
     slug: 'DosColumnas', // required
     fields: [ // required
     {
-      name: 'RichTextNormal',
+      name: 'Columna1',
       type: 'richText',
       admin: {
         elements: [
@@ -42,7 +42,7 @@ import { Block } from "payload/types";
 
    },
    {
-    name: 'RichTextNormal',
+    name: 'Columna2',
     type: 'richText',
     admin: {
       elements: [
