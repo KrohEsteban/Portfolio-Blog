@@ -8,6 +8,9 @@ import RichText from '../components/Bloques/Modal';
 import RichTextNormal from '../components/Bloques/RichTextNormal';
 import Modal from '../components/Bloques/Modal';
 import Carousel from '../components/Bloques/Carousel';
+import DosColumnas from '../components/Bloques/DosColumnas';
+import FotoBaner from '../components/Bloques/FotoBaner';
+import FotosProyectos from '../components/Bloques/FotosProyectos';
 
 const Pages: CollectionConfig = {
   slug: 'pages',
@@ -80,6 +83,9 @@ const Pages: CollectionConfig = {
        Modal,
        Carousel,
        Codigo,
+       DosColumnas,
+       FotoBaner,
+       FotosProyectos,
       ]
     }
   ],

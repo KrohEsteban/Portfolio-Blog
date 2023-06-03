@@ -7,6 +7,9 @@ import RichTextNormal from '../components/Bloques/RichTextNormal';
 import Modal from '../components/Bloques/Modal';
 import Carousel from '../components/Bloques/Carousel';
 import Codigo from '../components/Bloques/Codigo';
+import DosColumnas from '../components/Bloques/DosColumnas';
+import FotoBaner from '../components/Bloques/FotoBaner';
+import FotosProyectos from '../components/Bloques/FotosProyectos';
 
 // type NewField = TextField;
 
@@ -89,6 +92,9 @@ const Blogs: CollectionConfig = {
        Modal,
        Carousel,
        Codigo,
+       DosColumnas,
+       FotoBaner,
+       FotosProyectos,
       ]
     }
   ],
