@@ -1,15 +1,11 @@
 import { CollectionConfig } from 'payload/types';
-import RichTextButtonCode from '../components/CustomRichText/RichTextButtonCode';
-import RichTextElementCode from '../components/CustomRichText/RichTextElementCode';
-import RichTextButtonModal from '../components/CustomRichText/RichTextButtonModal';
-import RichTextElementModal from '../components/CustomRichText/RichTextElementModal';
 import RichTextNormal from '../components/Bloques/RichTextNormal';
 import Modal from '../components/Bloques/Modal';
 import Carousel from '../components/Bloques/Carousel';
 import Codigo from '../components/Bloques/Codigo';
 import DosColumnas from '../components/Bloques/DosColumnas';
 import FotoBaner from '../components/Bloques/FotoBaner';
-import FotosProyectos from '../components/Bloques/RelacionProyectos';
+import RelacionProyectos from '../components/Bloques/RelacionProyectos';
 
 // type NewField = TextField;
 
@@ -94,7 +90,7 @@ const Blogs: CollectionConfig = {
        Codigo,
        DosColumnas,
        FotoBaner,
-       FotosProyectos,
+       RelacionProyectos,
       ]
     }
   ],
