@@ -19,7 +19,7 @@ const Blogs: CollectionConfig = {
   },
   admin: {
     defaultColumns: ['Title', 'etiquetas'],
-    useAsTitle: 'TituloDelArticulo',
+    useAsTitle: 'Title',
   },
   access: {
     read: () => true,
