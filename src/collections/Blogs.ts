@@ -9,7 +9,7 @@ import Carousel from '../components/Bloques/Carousel';
 import Codigo from '../components/Bloques/Codigo';
 import DosColumnas from '../components/Bloques/DosColumnas';
 import FotoBaner from '../components/Bloques/FotoBaner';
-import FotosProyectos from '../components/Bloques/FotosProyectos';
+import FotosProyectos from '../components/Bloques/RelacionProyectos';
 
 // type NewField = TextField;
 
